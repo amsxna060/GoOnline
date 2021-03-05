@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+    <ScrollView
+        android:id="@+id/adding_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_added_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:padding="5dp"
+                android:visibility="visible"
+                android:text="Add Product"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                android:layout_below="@id/item_added_headline"
+                app:counterMaxLength="20"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eproduct_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:hint="Product Title"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_long_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eproduct_long_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:hint="Product Long Title"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_long_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eproduct_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:inputType="numberDecimal"
+                    android:hint="Product Price"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_price"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="2"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eproduct_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:inputType="numberDecimal"
+                    android:hint="Product Discount In %"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_discount"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="22"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/mproduct_color"
+                    style="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+                    android:hint="Product Color"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/mproduct_gender"
+                    style="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+                    android:hint="Men's/ Women's Or Kid's Wear"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_gender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/mproduct_type"
+                    style="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+                    android:hint="Product Type"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_keywords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_type"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:helperTextEnabled="true"
+                app:helperText="@string/keyword_helpertext"
+                app:helperTextTextColor="@color/colorGreen"
+                >
+                <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mproduct_keywords"
+                    android:fontFamily="serif"
+                    style="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+                    android:hint="Searching Keywords with Spaces"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/product_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/product_keywords"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/colorTheme"
+                app:hintTextColor="@color/colorTheme"
+                app:counterEnabled="true"
+                app:counterMaxLength="100"
+                app:counterOverflowTextAppearance="@android:color/holo_red_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eproduct_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:fontFamily="serif"
+                    android:gravity="top"
+                    android:hint="Product Description"
+                    android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_desc"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/images"
+                android:gravity="center">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/colorGrey"
+                    app:civ_border_width="2dp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:civ_border="true"
+                    android:layout_margin="16dp"
+                    app:civ_border_color="@color/colorGrey"
+                    app:civ_border_width="2dp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:civ_border="true"
+                    android:layout_margin="16dp"
+                    app:civ_border_color="@color/colorGrey"
+                    app:civ_border_width="2dp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:civ_border="true"
+                    android:layout_margin="16dp"
+                    app:civ_border_color="@color/colorGrey"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/upload_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:backgroundTint="@color/colorTheme"
+                android:layout_below="@id/images"
+                android:layout_marginTop="4dp"
+                android:text="Upload Product"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopDetailsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_red"
+    android:minHeight="150dp"
+    android:id="@+id/shopdetail">
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prem Store"
+        android:paddingLeft="8dp"
+        android:textSize="28sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/address_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="D24 Dublin \nIreland"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/shop_name"
+        android:textSize="18sp"
+        />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/item_added_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:text="My Item"
+        android:layout_below="@+id/shopdetail"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_added_headline"
+        android:id="@+id/specificshop"
+        tools:listitem="@layout/oneproduct"
+        />
+</RelativeLayout>

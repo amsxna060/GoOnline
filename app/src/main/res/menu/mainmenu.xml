@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="searchcam"
+        android:id="@+id/fav"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_round_camera_alt_24"
+        />
+    <item android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:iconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="cart"
+          android:id="@+id/cart"
+          android:icon="@drawable/ic_round_shopping_cart_24"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

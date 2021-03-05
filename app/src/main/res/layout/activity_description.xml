@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imageviewer"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@color/colorBlack" />
+
+        <RelativeLayout
+            android:id="@+id/detailsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageviewer"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/bgdesc"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Product Title"
+                android:textAllCaps="true"
+                android:textColor="#222222"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rating_star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignRight="@+id/product_title"
+                android:layout_alignBottom="@+id/product_title"
+                android:layout_marginEnd="-24dp"
+                android:src="@drawable/ic_round_star_24" />
+
+            <TextView
+                android:id="@+id/product_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/rating_star"
+                android:layout_alignBottom="@+id/rating_star"
+                android:layout_marginEnd="-20dp"
+                android:text="4.7"
+                android:textColor="#454343"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/fav_product"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_round_favorite_border_24" />
+
+            <ImageView
+                android:id="@+id/share_product"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/fav_product"
+                android:src="@drawable/ic_baseline_share_24" />
+
+            <TextView
+                android:id="@+id/product_long_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_title"
+                android:fontFamily="sans-serif"
+                android:text="Product long title"
+                android:textColor="#494848"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/desc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_long_title"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textColor="#494848"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_title"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif"
+                android:text="Sports includes all forms of Competitive physical activity or games which through casual or organised"
+                android:textColor="#494848"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_desc"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="sans-serif"
+                android:text="Price"
+                android:textColor="#494848"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_title"
+                android:layout_alignLeft="@+id/price_title"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif"
+                android:text="$175.00"
+                android:textColor="#252525"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Add to cart"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_red"
+                android:minHeight="120dp"
+                android:layout_below="@+id/add_to_cart"
+                android:id="@+id/shopdetail">
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="8dp"
+                    android:textSize="28sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/address_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/shop_name"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_price"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:fontFamily="serif"
+                android:textColor="#1B1A1A"
+                android:drawableLeft="@drawable/ic_round_location_on_24"
+                android:padding="5dp"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopdetail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:max="5" />
+        </RelativeLayout>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/commentcard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/detailsection"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:id="@+id/commentsection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/commentheading"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/ic_baseline_message_24"
+            android:drawablePadding="5dp"
+            android:text="Comments"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profilepic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/commentheading"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:civ_border="true"
+            app:civ_border_color_direction="top_to_bottom"
+            app:civ_border_color_end="@color/colorWhite"
+            app:civ_border_color_start="@color/colorGrey"
+            app:civ_border_width="2dp"
+            app:civ_circle_color="@color/colorWhite"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/colorBlack"
+            app:civ_shadow_gravity="bottom"
+            app:civ_shadow_radius="1dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prem Jitta"
+            android:layout_below="@id/commentheading"
+            android:layout_toRightOf="@+id/profilepic"
+            android:layout_alignBaseline="@+id/profilepic"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/commenteditext"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilepic"
+            android:layout_alignStart="@+id/profilepic"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comment Here..."
+                android:minHeight="100dp"
+                android:gravity="top"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/sendcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/commenteditext"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentsrecycler"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/commentrow"
+            android:layout_below="@+id/commentcard"/>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

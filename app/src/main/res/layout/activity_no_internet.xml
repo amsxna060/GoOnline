@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".NoInternet">
+
+    <TextView
+        android:id="@+id/no_internet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nointernet_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="No Internet Connection"
+        android:textColor="@color/colorTheme"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_internet_text"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="You are not connected to the internet.\nMake sure Wifi is on, Airplane Mode is off \nand try again."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/retry"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/desc_no_internet"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Retry"
+        android:textAllCaps="false"
+        app:rippleColor="@color/colorTheme"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/nointernet_logo"
+        android:layout_width="220dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/nointernet" />
+
+
+</RelativeLayout>

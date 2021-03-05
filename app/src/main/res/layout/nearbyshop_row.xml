@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/shop_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/shop_icon"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/colorGrey"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/shop_icon"/>
+        <TextView
+            android:id="@+id/address_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_below="@+id/shop_name"
+            android:layout_toRightOf="@+id/shop_icon"
+            />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

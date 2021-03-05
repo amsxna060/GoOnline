@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <TextView
+        android:id="@+id/item_added_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:text="Search"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/searchview"
+        android:layout_below="@+id/item_added_headline"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="4dp"
+        android:visibility="visible"
+        android:elevation="6dp">
+
+        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+            android:id="@+id/searchtext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/searchbtn"
+            android:background="@drawable/bgsearch"
+            android:hint="Search..."
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionGo"
+            android:paddingLeft="16dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/searchbtn"
+            android:background="@drawable/bgsearchbtn"
+            app:tint="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview"
+        />
+
+</RelativeLayout>

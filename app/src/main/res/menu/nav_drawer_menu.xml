@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/user"
+        android:orderInCategory="2"
+        android:title="User">
+        <menu>
+        <item
+            android:id="@+id/navhome"
+            android:icon="@drawable/ic_round_home_24"
+            android:title="@string/str_home" />
+        <item
+            android:id="@+id/newoffer"
+            android:icon="@drawable/ic_round_new_releases_24"
+            android:title="@string/str_new_offers" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/merchant"
+        android:orderInCategory="4"
+        android:title="Merchant">
+        <menu>
+            <item
+                android:id="@+id/reg_ur_shop"
+                android:icon="@drawable/shopreg"
+                android:title="@string/str_shop_registration" />
+
+
+            <item
+                android:id="@+id/nearbystore"
+                android:icon="@drawable/nearbyshop"
+                android:title="@string/str_fav_store" />
+        </menu>
+    </item>
+    <item
+        android:orderInCategory="5"
+        android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/ur_profile"
+                android:icon="@drawable/ic_round_person_24"
+                android:title="@string/str_your_profile" />
+            <item
+                android:id="@+id/ur_orders"
+                android:icon="@drawable/ic_baseline_event_note_24"
+                android:title="@string/str_previous_orders" />
+            <item
+                android:id="@+id/myfav"
+                android:icon="@drawable/ic_round_favorite_24"
+                android:title="@string/str_favourite" />
+            <item
+                android:id="@+id/mycart"
+                android:icon="@drawable/ic_round_shopping_cart_24"
+                android:title="@string/str_your_cart" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_round_settings_24"
+                android:title="@string/str_settings" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/ic_baseline_contact_support_24"
+                android:title="@string/str_contact_us" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="@string/str_sign_out" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+    <TextView
+        android:id="@+id/item_added_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:text="Dashboard"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/shopprofile"
+        android:layout_below="@id/item_added_headline"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:layout_margin="4dp"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/myproduct"
+        android:layout_below="@id/change_address"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Product"
+                android:layout_margin="4dp"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/change_address"
+        android:layout_below="@id/shopprofile"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Address"
+                android:layout_margin="4dp"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/add_product"
+        android:layout_below="@id/myproduct"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:layout_margin="4dp"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

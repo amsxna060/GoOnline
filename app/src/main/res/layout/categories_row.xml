@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:rippleColor="#CCCCCC"
+    android:layout_height="180dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/categories_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/cat_shirt"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/categories_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tee-Shirts"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textSize="44dp"
+        android:paddingStart="170dp"
+        android:lines="1"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="right|center_vertical"
+        android:textColor="#FFFFFF"
+        android:background="#66000000"
+        />
+</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

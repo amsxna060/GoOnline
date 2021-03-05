@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profilepic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:civ_border="true"
+            app:civ_border_color_direction="top_to_bottom"
+            app:civ_border_color_end="@color/colorWhite"
+            app:civ_border_color_start="@color/colorGrey"
+            app:civ_border_width="2dp"
+            app:civ_circle_color="@color/colorWhite"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/colorBlack"
+            app:civ_shadow_gravity="bottom"
+            app:civ_shadow_radius="1dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilepic"
+            android:layout_alignBaseline="@+id/profilepic"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            />
+        <TextView
+            android:id="@+id/commentbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilepic"
+            android:layout_alignBaseline="@+id/profilepic"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/profilepic"
+            android:layout_below="@+id/commentbody"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "330044167544",
+    "project_id": "goonline-atm826",
+    "storage_bucket": "goonline-atm826.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330044167544:android:3ad782eb5478fbbffba48d",
+        "android_client_info": {
+          "package_name": "com.amansiol.goonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330044167544-jkn55b6mtoaicvofk18b8mc1tnfoa8s9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amansiol.goonline",
+            "certificate_hash": "1922014b8b98d5b51d8dd82117401525b4bc7327"
+          }
+        },
+        {
+          "client_id": "330044167544-99ik92ldganspbmobs56hkg4pqfvpsat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy3FUTsafjf5Am3faN1NKOttU94OhYOUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330044167544-99ik92ldganspbmobs56hkg4pqfvpsat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

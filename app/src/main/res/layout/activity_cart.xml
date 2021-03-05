@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:id="@+id/cartLayout">
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Y_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="serif"
+            android:text="Y"
+            android:textColor="@color/colorTheme"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ourcart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Y_text"
+            android:layout_marginStart="-8dp"
+            android:layout_toRightOf="@+id/Y_text"
+            android:text="our Cart"
+            android:textColor="@color/colorTheme"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_round_shopping_cart_24" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/continueshopping"
+        android:layout_below="@+id/heading"
+        tools:listitem="@layout/cartrow" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="You have not added any item in your cart"
+        android:background="#939292"
+        android:layout_above="@+id/continueshopping"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:id="@+id/empty_cart"
+        android:visibility="gone"
+        android:layout_below="@+id/heading"/>
+
+    <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/continueshopping"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cartTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:text="Continue Shopping"
+        app:rippleColor="@color/colorTheme"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/cartTotal"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Summary"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:text="Items Total"
+            android:textColor="@color/colorTheme"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/totalitemprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="$ 0.00"
+            android:textColor="#201E1E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalitemprice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:text="Shipping Total"
+            android:textColor="@color/colorTheme"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/shippingfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalitemprice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="$ 0.00"
+            android:textColor="#201E1E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippingfee"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:text="Complete Total"
+            android:textColor="@color/colorTheme"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/completetotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shippingfee"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="$ 0.00"
+            android:textColor="#201E1E"
+            android:textSize="22sp" />
+
+        <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:padding="12dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="Checkout Payment"
+            app:strokeColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

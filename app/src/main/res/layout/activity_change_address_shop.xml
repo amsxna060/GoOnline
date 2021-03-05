@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ChangeAddressShop">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_pincode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxStrokeColor="@color/colorTheme"
+        app:hintTextColor="@color/colorTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editpincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:hint="Pincode/Irecode"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_locality"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TIL_pincode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Locality"
+        app:boxStrokeColor="@color/colorTheme"
+        app:hintTextColor="@color/colorTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editlocality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_sub_locality"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TIL_locality"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Sublocality"
+        app:boxStrokeColor="@color/colorTheme"
+        app:hintTextColor="@color/colorTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editsublocality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_state"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TIL_sub_locality"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxStrokeColor="@color/colorTheme"
+        app:hintTextColor="@color/colorTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:hint="State"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_country"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TIL_state"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxStrokeColor="@color/colorTheme"
+        app:hintTextColor="@color/colorTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editcountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:hint="Country"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TIL_country"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/change_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/loading"
+        android:backgroundTint="@color/colorTheme"
+        android:fontFamily="serif"
+        android:padding="4dp"
+        android:text="Change" />
+
+</RelativeLayout>

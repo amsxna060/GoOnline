@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:rippleColor="@color/dark_gray">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF2121">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cartitemimage"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@color/black"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/cartitemimage"
+            android:fontFamily="sans-serif"
+            android:minWidth="100dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_long_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_title"
+            android:layout_toEndOf="@+id/cartitemimage"
+            android:fontFamily="sans-serif"
+            android:minWidth="120dp"
+            android:textColor="#494848"
+            android:textSize="14sp" />
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            app:rippleColor="@color/dark_gray"-->
+        <!--            app:cardUseCompatPadding="true"-->
+        <!--            app:cardCornerRadius="5dp"-->
+        <!--            app:cardElevation="2dp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginBottom="4dp"-->
+        <!--            android:layout_toEndOf="@+id/cartitemimage"-->
+        <!--            android:layout_height="40dp">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent">-->
+        <!--              <ImageView-->
+        <!--                  android:id="@+id/decrease"-->
+        <!--                  android:layout_width="30dp"-->
+        <!--                  android:layout_height="match_parent"-->
+        <!--                  android:background="#CACACA"-->
+        <!--                  android:paddingStart="5dp"-->
+        <!--                  android:paddingEnd="5dp"-->
+        <!--                  android:src="@drawable/cartremove"/>-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/counter"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:typeface="monospace"-->
+        <!--                    android:paddingStart="10dp"-->
+        <!--                    android:paddingEnd="10dp"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    />-->
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/increase"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#CACACA"-->
+        <!--                    android:paddingStart="5dp"-->
+        <!--                    android:paddingEnd="5dp"-->
+        <!--                    android:src="@drawable/cartadd"/>-->
+
+        <!--            </LinearLayout>-->
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+        <TextView
+            android:id="@+id/price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="sans-serif"
+            android:text="Price"
+            android:textColor="#494848"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/price_title"
+            android:layout_alignLeft="@+id/price_title"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif"
+            android:textColor="#252525"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notExist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:text="This is Item is Deleted"
+        android:textSize="24dp"
+        android:visibility="gone" />
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Men's"
+         >
+        <menu>
+            <item
+                android:id="@+id/shirt"
+                android:title="Shirt"
+                />
+            <item
+                android:id="@+id/tshirt"
+                android:title="Tee-Shirt"
+                />
+            <item
+                android:id="@+id/jeans"
+                android:title="Jeans"
+                />
+            <item
+                android:id="@+id/hoddies"
+                android:title="Hoddies"
+                />
+            <item
+                android:id="@+id/blazers"
+                android:title="Blazers"
+                />
+        </menu>
+    </item>
+
+    <item android:title="Women's">
+        <menu>
+            <item
+                android:id="@+id/lehenga"
+                android:title="Lehenga"
+                />
+            <item
+                android:id="@+id/tops"
+                android:title="Tops"
+                />
+            <item
+                android:id="@+id/sports"
+                android:title="Sports"
+                />
+            <item
+                android:id="@+id/saree"
+                android:title="Saree"
+                />
+            <item
+                android:id="@+id/sweater"
+                android:title="Sweaters"
+                />
+        </menu>
+    </item>
+    <item android:title="Kid's Wear">
+        <menu>
+            <item
+                android:id="@+id/casual"
+                android:title="Casual"
+                />
+            <item
+                android:id="@+id/partywear"
+                android:title="Party Wear"
+                />
+        </menu>
+    </item>
+    <item android:title="Unisex">
+        <menu>
+            <item
+                android:id="@+id/utshirts"
+                android:title="Tee-Shirts"
+                />
+            <item
+                android:id="@+id/ushirts"
+                android:title="Shirts"
+                />
+        </menu>
+    </item>
+</menu>

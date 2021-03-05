@@ -1,0 +1,23 @@
+0 black printed shirt
+1 black Tshirt
+2 blue cotton trouser
+3 blue shirt
+4 blue jeans trouser
+5 brown leather jacket
+6 brown printed shirt
+7 dark blue trouser
+8 light blue jeans jacket
+9 green cotton trouser
+10 multi-color t-shirt 
+11  blue polo jacket
+12 red and black shirt
+13 red jacket
+14 red t-shirt
+15 silver full shirt
+16 silver jeans trouser
+17 silver t-shirt
+18 white cotton trouser
+19 white shirt
+20 white jeans trouser
+21 white Tshirt
+22 yellow shirt

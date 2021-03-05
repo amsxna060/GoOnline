@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/aboveaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/label_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:text="Name"
+                        android:textColor="@color/colorTheme"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/editnamefield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/label_name"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:id="@+id/name_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:padding="4dp"
+                            android:layout_toLeftOf="@+id/name_toggle"
+                            android:fontFamily="serif"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="16dp"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/editname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:hint="Enter New Name"
+                            android:fontFamily="monospace"
+                            android:layout_toStartOf="@+id/name_toggle"
+                            android:padding="4dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@drawable/ic_round_minimize_24"
+                            android:background="@color/colorWhite"
+                            android:layout_marginEnd="16dp"
+                            android:textSize="20sp"
+                            android:inputType="textPersonName"
+                            android:imeOptions="actionDone"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/name_toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:visibility="visible"
+                            android:src="@drawable/ic_outline_edit_24" />
+                        <ImageView
+                            android:id="@+id/save_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_baseline_cloud_done_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/label_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editnamefield"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="serif"
+                        android:text="Email"
+                        android:textColor="@color/colorTheme"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/email_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/label_email"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="4dp"
+                        android:fontFamily="serif"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/unverified"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/email_value"
+                        android:layout_alignEnd="@+id/email_value"
+                        android:drawableEnd="@drawable/ic_baseline_error_outline_24"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Unverified"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/add_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email_value"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="serif"
+                        android:text="Address"
+                        android:textColor="@color/colorTheme"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/add_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/add_label"
+                        android:layout_marginStart="14dp"
+                        android:padding="5dp"
+                        android:fontFamily="serif"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/address_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/add_value"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/ic_outline_edit_24" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/edit_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboveaddress"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TIL_pincode"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:boxStrokeColor="@color/colorTheme"
+                        app:hintTextColor="@color/colorTheme">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editpincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="serif"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:hint="Pincode/Irecode"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TIL_locality"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TIL_pincode"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Locality"
+                        android:layout_marginRight="10dp"
+                        app:boxStrokeColor="@color/colorTheme"
+                        app:hintTextColor="@color/colorTheme">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editlocality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:fontFamily="serif"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TIL_sub_locality"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TIL_locality"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Sublocality"
+                        app:boxStrokeColor="@color/colorTheme"
+                        app:hintTextColor="@color/colorTheme">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editsublocality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:fontFamily="serif"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TIL_state"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TIL_sub_locality"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:boxStrokeColor="@color/colorTheme"
+                        app:hintTextColor="@color/colorTheme">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editstate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:fontFamily="serif"
+                            android:hint="State"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TIL_country"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TIL_state"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:boxStrokeColor="@color/colorTheme"
+                        app:hintTextColor="@color/colorTheme">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editcountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:fontFamily="serif"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPostalAddress"
+                            android:lines="1"
+                            android:hint="Country"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/change_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TIL_country"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="25dp"
+                        android:backgroundTint="@color/colorTheme"
+                        android:fontFamily="serif"
+                        android:padding="4dp"
+                        android:text="Change" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-6dp"
+            android:id="@+id/loading"
+            />
+    </RelativeLayout>
+</FrameLayout>
