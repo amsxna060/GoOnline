@@ -96,6 +96,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="16dp"
             android:text="Verification"
+            android:visibility="gone"
             android:id="@+id/verifyswitch"
             />
 

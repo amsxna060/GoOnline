@@ -128,7 +128,6 @@ public class CodeConfirmActivity extends AppCompatActivity {
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
                         .setActivity(this)                 // Activity (for callback binding)
                         .setCallbacks(mCallbacks)        // OnVerificationStateChangedCallbacks
-                        .setForceResendingToken(mToken)
                         .build();
         PhoneAuthProvider.verifyPhoneNumber(options);
     }

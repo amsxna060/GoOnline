@@ -6,8 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -39,8 +42,20 @@ import com.google.firebase.firestore.SetOptions;
 import com.mikhaellopez.circularimageview.CircularImageView;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 public class DescriptionActivity extends AppCompatActivity {
 
@@ -75,6 +90,8 @@ public class DescriptionActivity extends AppCompatActivity {
 
     TextView distancer_textview;
 
+    Button direction;
+
 
     void initialize() {
         fourimages = new ArrayList<>();
@@ -95,6 +112,7 @@ public class DescriptionActivity extends AppCompatActivity {
         shop_Name = findViewById(R.id.shop_name);
         address = findViewById(R.id.address_shop);
         distancer_textview = findViewById(R.id.distance);
+        direction=findViewById(R.id.direction);
     }
 
 
@@ -284,6 +302,7 @@ public class DescriptionActivity extends AppCompatActivity {
                     .document(product.getShopId())
                     .get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @SuppressLint("SetTextI18n")
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
                             Shops shops = documentSnapshot.toObject(Shops.class);
@@ -309,7 +328,20 @@ public class DescriptionActivity extends AppCompatActivity {
                                             User user = value.toObject(User.class);
                                             double distance = filterByRadius(user.getLocation().getLatitude(), user.getLocation().getLongitude(), shops.getLocation().getLatitude(), shops.getLocation().getLongitude());
                                             distancer_textview.setVisibility(View.VISIBLE);
-                                            distancer_textview.setText(shops.getShopname() + " is just " + String.format("%1.2f", distance) + "Km Far from you.");
+                                            distancer_textview.setText(shops.getShopname() + " is just " + String.format("%1.2f ",distance) + " KM Far from you.");
+                                            direction.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?daddr=%f,%f (%s)",shops.getLocation().getLatitude(), shops.getLocation().getLongitude(), " "+shops.getShopname());
+                                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                                                    intent.setPackage("com.google.android.apps.maps");
+                                                    if (intent.resolveActivity(getPackageManager()) != null) {
+                                                        startActivity(intent);
+                                                    } else {
+                                                        Toast.makeText(DescriptionActivity.this,"Download Google Map first",Toast.LENGTH_LONG).show();
+                                                    }
+                                                }
+                                            });
                                         } else {
                                             distancer_textview.setVisibility(View.GONE);
                                         }
@@ -322,6 +354,36 @@ public class DescriptionActivity extends AppCompatActivity {
         }
 
     }
+
+//    public String getDistance(final double lat1, final double lon1, final double lat2, final double lon2){
+//        String parsedDistance = null;
+//        final String response;
+//
+//            try {
+//
+//                URL url = new URL("http://maps.googleapis.com/maps/api/directions/json?origin=" + lat1 + "," + lon1 + "&destination=" + lat2 + "," + lon2 + "&sensor=false&units=metric&mode=walking");
+//                final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//                conn.setRequestMethod("POST");
+//                InputStream in = new BufferedInputStream(conn.getInputStream());
+//                String res = org.apache.commons.io.IOUtils.toString(in, "UTF-8");
+//                JSONObject jsonObject = new JSONObject(res);
+//                JSONArray array = null;
+//                try {
+//                    array = jsonObject.getJSONArray("routes");
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//                JSONObject routes = array.getJSONObject(0);
+//                JSONArray legs = routes.getJSONArray("legs");
+//                JSONObject steps = legs.getJSONObject(0);
+//                JSONObject distance = steps.getJSONObject("distance");
+//                parsedDistance = distance.getString("text");
+//
+//            } catch (IOException | JSONException e) {
+//                e.printStackTrace();
+//            }
+//        return parsedDistance;
+//    }
 
     private static double filterByRadius(double lat1, double lon1, double lat2, double lon2) {
         if ((lat1 == lat2) && (lon1 == lon2)) {
@@ -339,6 +401,8 @@ public class DescriptionActivity extends AppCompatActivity {
             return (dist);
         }
     }
+
+
 
     private void getAllCommentsFromFirebase() {
         commentList.clear();

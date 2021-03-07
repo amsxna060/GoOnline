@@ -139,10 +139,11 @@
                 android:id="@+id/add_to_cart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/distance"
+                android:layout_below="@+id/direction"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:text="Add to cart"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
@@ -183,14 +184,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/product_price"
-                android:text=""
+                android:gravity="top"
                 android:textSize="18sp"
                 android:textStyle="italic"
                 android:fontFamily="serif"
                 android:textColor="#1B1A1A"
-                android:drawableLeft="@drawable/ic_round_location_on_24"
                 android:padding="5dp"
+                app:drawableStartCompat="@drawable/ic_round_location_on_24" />
+
+            <Button
+                android:id="@+id/direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direction"
+                android:layout_below="@id/distance"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_baseline_directions_24"
                 />
+
 
             <RatingBar
                 android:id="@+id/ratingBar"
