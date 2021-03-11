@@ -41,7 +41,7 @@
 
 **Taking Output as a label and accuracy** : After that model will return a 2-dimensional floating-point array in which I have the accuracy and label and from this whole array I just take out the label which have maximum accuracy. Show that label to the user and search the images in my app regarding that label.
 # Demo
-[**See On Youtube**](https://youtube.com/playlist?list=PLZ_JS_kELRSsuCmtx7R7f4Ei6X6xc7Gbt)
+[**See On Youtube**](https://youtu.be/hhXX1PlnPQg?list=PLZ_JS_kELRSsuCmtx7R7f4Ei6X6xc7Gbt)
 <table>
   <tr>
     <th>Sign Up and MainActivity</th>
