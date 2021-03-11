@@ -85,17 +85,14 @@
     <th>Sing up Activity</th>
     <th>Home Screen Activity</th>
     <th>Navigation Drawer</th>
-    <th>User Profile Fragment</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/signup.jpg"
-         alt = "Sign Up" height = "360" width = "185" /></td>
+         alt = "Sign Up" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/location permission.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/navigation .jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/user profile.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
   </tr>
 </table>
 
@@ -107,30 +104,27 @@
   </tr>
   <tr>
     <td><img src = "Screenshots/mens.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/womens.jpg"
-         alt = "Sign Up" height = "360" width = "185" /></td>
+         alt = "Sign Up" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/navigation drawer category.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th>Lehenga Recycler</th>
     <th>Top's Recycler</th>
     <th>Description Activity (up)</th>
     <th>Description Activity (down)</th>
   </tr>
   <tr>
-    <td><img src = "Screenshots/lehenga.jpg"
-         alt = "Sign Up" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/tops.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/description activity upside.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/description activity downside.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
   </tr>
 </table>
 
@@ -139,27 +133,28 @@
     <th>Shop Registration</th>
     <th>Shop Owner Dashboard</th>
     <th>Add Product</th>
-    <th>Shop Owner Products</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/shop registration.jpg"
-         alt = "Splash Screen" height = "420" width = "200" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/dashboard.jpg"
-         alt = "Splash Screen" height = "420" width = "200" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/add product.png"
-         alt = "Splash Screen" height = "420" width = "200" /></td>
-    <td><img src = "Screenshots/shirt.jpg"
-         alt = "Splash Screen" height = "420" width = "200" /></td>
+         alt = "Splash Screen" height = "550" width = "250" /></td>
+   
   </tr>
 </table>
 
 <table>
   <tr>
+    <th>Shop Owner Products</th>
     <th>Cart Activity</th>
   </tr>
   <tr>
+     <td><img src = "Screenshots/shirt.jpg"
+         alt = "Splash Screen" height = "500" width = "250" /></td>
     <td><img src = "Screenshots/cart.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "500" width = "250" /></td>
   </tr>
 </table>
         
