@@ -137,22 +137,19 @@
 <table>
   <tr>
     <th>Shop Registration</th>
-    <th>Shop Owner Profile</th>
     <th>Shop Owner Dashboard</th>
     <th>Add Product</th>
     <th>Shop Owner Products</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/shop registration.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/shop profile.jpg"
-         alt = "Sign Up" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "420" width = "200" /></td>
     <td><img src = "Screenshots/dashboard.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "420" width = "200" /></td>
     <td><img src = "Screenshots/add product.png"
-         alt = "Splash Screen" height = "400" width = "185" /></td>
+         alt = "Splash Screen" height = "420" width = "200" /></td>
     <td><img src = "Screenshots/shirt.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
+         alt = "Splash Screen" height = "420" width = "200" /></td>
   </tr>
 </table>
 
