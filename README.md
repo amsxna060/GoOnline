@@ -41,7 +41,7 @@
 
 **Taking Output as a label and accuracy** : After that model will return a 2-dimensional floating-point array in which I have the accuracy and label and from this whole array I just take out the label which have maximum accuracy. Show that label to the user and search the images in my app regarding that label.
 # Demo
-
+[**See On Youtube**](https://youtube.com/playlist?list=PLZ_JS_kELRSsuCmtx7R7f4Ei6X6xc7Gbt)
 <table>
   <tr>
     <th>Sign Up and MainActivity</th>
@@ -96,11 +96,11 @@
 
 <table>
   <tr>
-    <th>Splash Screen</th>
-    <th>Sing up Activity</th>
-    <th>Home Screen Activity</th>
-    <th>Navigation Drawer</th>
-    <th>User Profile Fragment</th>
+    <th>Mens Fragment</th>
+    <th>Womens Fragment</th>
+    <th>Kids Fragment</th>
+    <th>Unisex Fragment</th>
+    <th>Category Navigation Drawer</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/mens.jpg"
@@ -118,11 +118,11 @@
 
 <table>
   <tr>
-    <th>Splash Screen</th>
-    <th>Sing up Activity</th>
-    <th>Home Screen Activity</th>
-    <th>Navigation Drawer</th>
-    <th>User Profile Fragment</th>
+    <th>Lehenga Recycler</th>
+    <th>Top's Recycler</th>
+    <th>Description Activity (up)</th>
+    <th>Description Activity (down)</th>
+    <th>Near by Shops</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/lehenga.jpg"
@@ -140,11 +140,11 @@
 
 <table>
   <tr>
-    <th>Splash Screen</th>
-    <th>Sing up Activity</th>
-    <th>Home Screen Activity</th>
-    <th>Navigation Drawer</th>
-    <th>User Profile Fragment</th>
+    <th>Shop Registration</th>
+    <th>Shop Owner Profile</th>
+    <th>Shop Owner Dashboard</th>
+    <th>Add Product</th>
+    <th>Shop Owner Products</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/shop registration.jpg"
@@ -160,6 +160,27 @@
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th>Cart Activity</th>
+    <th>Favourite Activity</th>
+    <th>Email Verification</th>
+    <th>Product Search By Image</th>
+    <th>Settings Activity</th>
+  </tr>
+  <tr>
+    <td><img src = "Screenshots/cart.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/fav activity.jpg"
+         alt = "Sign Up" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/email verification.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/image search.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/setting.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+  </tr>
+</table>
         
 
 
