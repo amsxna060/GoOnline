@@ -41,6 +41,31 @@
 
 **Taking Output as a label and accuracy** : After that model will return a 2-dimensional floating-point array in which I have the accuracy and label and from this whole array I just take out the label which have maximum accuracy. Show that label to the user and search the images in my app regarding that label.
 
+# Demo
+
+# Screenshots
+<table>
+  <tr>
+    <th>Splash Screen</th>
+    <th>Sing up Activity</th>
+    <th>Home Screen Activity</th>
+    <th>Navigation Drawer</th>
+    <th>User Profile Fragment</th>
+  </tr>
+  <tr>
+    <td><img src = "Screenshots/splash screen.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/signup.jpg"
+         alt = "Sign Up" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/mens.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/navigation .jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+    <td><img src = "Screenshots/user profile.jpg"
+         alt = "Splash Screen" height = "360" width = "185" /></td>
+  </tr>
+</table>
+
  
 
         
