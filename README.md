@@ -41,30 +41,38 @@
 
 **Taking Output as a label and accuracy** : After that model will return a 2-dimensional floating-point array in which I have the accuracy and label and from this whole array I just take out the label which have maximum accuracy. Show that label to the user and search the images in my app regarding that label.
 # Demo
-[**See On Youtube**](https://youtu.be/hhXX1PlnPQg?list=PLZ_JS_kELRSsuCmtx7R7f4Ei6X6xc7Gbt)
+[**See On Youtube**](https://youtu.be/zskc0mlxDU8?list=PLZ_JS_kELRStm4g9MugJ6QIEZ5PQXyGgN)
 <table>
   <tr>
     <th>Sign Up and MainActivity</th>
     <th>Product detail</th>
-    <th>Explore Application</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/signup.gif"
-         alt = "Splash Screen" height = "500" width = "450" /></td>
+         alt = "Splash Screen" height = "550" width = "350" /></td>
     <td><img src = "Screenshots/overview.gif"
-         alt = "Sign Up" height = "500" width = "450" /></td>
-    <td><img src = "Screenshots/explore.gif"
-         alt = "Splash Screen" height = "500" width = "450" /></td>
+         alt = "Sign Up" height = "550" width = "350" /></td>
+
   </tr>
 </table>
 <table>
   <tr>
     <th>Cart Activity & Favourite Activity</th>
+      <th>Explore Application</th>
+  </tr>
+  <tr>
+    <td><img src = "Screenshots/explore.gif"
+         alt = "Splash Screen" height = "550" width = "350" /></td>
+    <td><img src = "Screenshots/explore 2.gif"
+         alt = "Splash Screen" height = "550" width = "350" /></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th>Image Based Search</th>
   </tr>
   <tr>
-    <td><img src = "Screenshots/explore 2.gif"
-         alt = "Splash Screen" height = "550" width = "350" /></td>
     <td><img src = "Screenshots/imagebasedsearch.gif"
          alt = "Splash Screen" height = "550" width = "350" /></td>
   </tr>
@@ -74,15 +82,12 @@
 
 <table>
   <tr>
-    <th>Splash Screen</th>
     <th>Sing up Activity</th>
     <th>Home Screen Activity</th>
     <th>Navigation Drawer</th>
     <th>User Profile Fragment</th>
   </tr>
   <tr>
-    <td><img src = "Screenshots/splash screen.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/signup.jpg"
          alt = "Sign Up" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/location permission.jpg"
@@ -98,8 +103,6 @@
   <tr>
     <th>Mens Fragment</th>
     <th>Womens Fragment</th>
-    <th>Kids Fragment</th>
-    <th>Unisex Fragment</th>
     <th>Category Navigation Drawer</th>
   </tr>
   <tr>
@@ -107,10 +110,6 @@
          alt = "Splash Screen" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/womens.jpg"
          alt = "Sign Up" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/kids.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/unisex.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/navigation drawer category.jpg"
          alt = "Splash Screen" height = "360" width = "185" /></td>
   </tr>
@@ -122,7 +121,6 @@
     <th>Top's Recycler</th>
     <th>Description Activity (up)</th>
     <th>Description Activity (down)</th>
-    <th>Near by Shops</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/lehenga.jpg"
@@ -132,8 +130,6 @@
     <td><img src = "Screenshots/description activity upside.jpg"
          alt = "Splash Screen" height = "360" width = "185" /></td>
     <td><img src = "Screenshots/description activity downside.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-     <td><img src = "Screenshots/shop nearby.jpg"
          alt = "Splash Screen" height = "360" width = "185" /></td>
   </tr>
 </table>
@@ -163,21 +159,9 @@
 <table>
   <tr>
     <th>Cart Activity</th>
-    <th>Favourite Activity</th>
-    <th>Email Verification</th>
-    <th>Product Search By Image</th>
-    <th>Settings Activity</th>
   </tr>
   <tr>
     <td><img src = "Screenshots/cart.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/fav activity.jpg"
-         alt = "Sign Up" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/email verification.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/image search.jpg"
-         alt = "Splash Screen" height = "360" width = "185" /></td>
-    <td><img src = "Screenshots/setting.jpg"
          alt = "Splash Screen" height = "360" width = "185" /></td>
   </tr>
 </table>
