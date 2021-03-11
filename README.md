@@ -40,10 +40,36 @@
 **Convert image and input** : I wrote the coding part by taking the help of firebase model interpreter to interpret my model. These are the firebase model interpreter class by these objects I can open my model in the application and after then I will pass  the image as a input in the function or Also I have to change that image into floating array of 4 dimensional array of floating point values and after that I can give this image in the form of 4 dimensional floating point array of which I have created by the input image which is selected by user to search then after model will run and recognize the image and find the similar floating point array in the model also that would be created when I trained my model with my training images.
 
 **Taking Output as a label and accuracy** : After that model will return a 2-dimensional floating-point array in which I have the accuracy and label and from this whole array I just take out the label which have maximum accuracy. Show that label to the user and search the images in my app regarding that label.
-
 # Demo
 
-# Screenshots
+<table>
+  <tr>
+    <th>Sign Up and MainActivity</th>
+    <th>Product detail</th>
+    <th>Explore Application</th>
+  </tr>
+  <tr>
+    <td><img src = "Screenshots/signup.gif"
+         alt = "Splash Screen" height = "500" width = "450" /></td>
+    <td><img src = "Screenshots/overview.gif"
+         alt = "Sign Up" height = "500" width = "450" /></td>
+    <td><img src = "Screenshots/explore.gif"
+         alt = "Splash Screen" height = "500" width = "450" /></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Cart Activity & Favourite Activity</th>
+    <th>Image Based Search</th>
+  </tr>
+  <tr>
+    <td><img src = "Screenshots/explore 2.gif"
+         alt = "Splash Screen" height = "550" width = "350" /></td>
+    <td><img src = "Screenshots/imagebasedsearch.gif"
+         alt = "Splash Screen" height = "550" width = "350" /></td>
+  </tr>
+</table>
+## Screenshots
 <table>
   <tr>
     <th>Splash Screen</th>
